@@ -1,0 +1,79 @@
+$border-color: #333;
+$border-focus-color: #32882f;
+
+$input-placeholder-color: #888;
+$input-color: #333;
+
+$button-bg-color: #ca5748;
+$button-bg-hover-color: #b1493c;
+$button-text-color: #fff;
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	hr {
+		margin: 4rem 0;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+
+	width: 50rem;
+
+	&__field {
+		display: flex;
+		flex-direction: column;
+		row-gap: .5rem;
+
+		span {
+			color: $button-bg-color;
+			font-size: 1.2rem;
+			font-weight: 300;
+		}
+	}
+
+
+	&__input {
+		border: none;
+		border-bottom: .1rem solid $border-color;
+		font-size: 1.3rem;
+		outline: none;
+		color: $input-color;
+
+		&:focus {
+			border-bottom-color: $border-focus-color;
+		}
+
+		&::placeholder {
+			color: $input-placeholder-color;
+		}
+	}
+
+	&__submit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		min-width: 20rem;
+		padding: .6rem 1.2rem;
+		margin: 0 auto;
+
+		font-size: 1.6rem;
+		background-color: $button-bg-color;
+		color: $button-text-color;
+
+		transition: background-color .3s ease 0s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $button-bg-hover-color;
+		}
+
+	}
+}

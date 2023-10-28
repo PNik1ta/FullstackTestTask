@@ -1,0 +1,33 @@
+// Here will be all mixins
+
+@mixin respond($breakpoint) {
+	@if ($breakpoint == small-phone) {
+		@media screen and (max-width: 480px) {
+			 @content;
+		}
+  }
+
+	@if ($breakpoint == phone) {
+		 @media screen and (max-width: 768px) {
+			  @content;
+		 }
+	}
+
+	@if ($breakpoint == tab) {
+		 @media screen and (max-width: 1024px) {
+			  @content;
+		 }
+	}
+
+	@if ($breakpoint == big-tab) {
+		 @media screen and (max-width: 1220px) {
+			  @content;
+		 }
+	}
+
+	@if ($breakpoint == big-screen) {
+		 @media screen and (min-width: 1800px) {
+			  @content;
+		 }
+	}
+}

@@ -1,0 +1,23 @@
+html {
+	font-size: 62.5%;
+	min-height: 100%;
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+ 
+	@include respond(big-tab) {
+	  font-size: 60%;
+	}
+ 
+	@include respond(tab) {
+	  font-size: 57%;
+	}
+ 
+	@include respond(phone) {
+	  font-size: 53%;
+	}
+ 
+	@include respond(small-phone) {
+	  font-size: 50%;
+	}
+ }

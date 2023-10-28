@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s 
+
+scrape_configs:
+  - job_name: 'test-task-backend'
+    static_configs:
+      - targets: ['test-task-backend:3000']
